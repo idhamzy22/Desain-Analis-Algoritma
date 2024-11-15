@@ -1,0 +1,19 @@
+@startuml
+start
+:Admin/Pelanggan login ke sistem;
+if (Login berhasil?) then (Ya)
+    :Tampilkan dashboard sesuai peran;
+    if (Peran adalah Admin?) then (Ya)
+        :Kelola Data Pelanggan;
+        :Tambah, Ubah, atau Hapus data;
+        :Kelola Transaksi dan Produk;
+    else (Tidak)
+        :Pelanggan melihat riwayat transaksi;
+        :Pelanggan memberikan feedback;
+    endif
+    :Logout dari sistem;
+else (Tidak)
+    :Tampilkan pesan error login;
+endif
+stop
+@enduml

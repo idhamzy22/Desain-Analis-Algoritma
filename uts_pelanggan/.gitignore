@@ -1,0 +1,37 @@
+# File log
+*.log
+
+# File database
+*.db
+*.sqlite
+
+# Folder build dan dependency manager
+/node_modules/
+/build/
+/dist/
+/vendor/
+
+# File sementara editor
+*.swp
+*.bak
+.vscode/
+
+# File sementara macOS
+.DS_Store
+
+# File sementara Windows
+Thumbs.db
+
+# File konfigurasi lokal
+.env
+.env.local
+
+# Abaikan file besar
+*.iso
+*.tar.gz
+*.zip
+*.tar
+
+# Abaikan file MySQL yang besar
+sampleapp/db/data/ib_logfile*
+sampleapp/db/data/ibdata*

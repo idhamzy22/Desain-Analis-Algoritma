@@ -1,0 +1,25 @@
+@startuml
+actor Admin
+actor Pelanggan
+
+rectangle "Sistem Data Pelanggan" {
+    usecase "Kelola Data Pelanggan" as UC1
+    usecase "Kelola Transaksi" as UC2
+    usecase "Kelola Produk" as UC3
+    usecase "Melihat Riwayat Transaksi" as UC4
+    usecase "Memberikan Feedback" as UC5
+    usecase "Login" as UC6
+    usecase "Logout" as UC7
+}
+
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC6
+Admin --> UC7
+
+Pelanggan --> UC4
+Pelanggan --> UC5
+Pelanggan --> UC6
+Pelanggan --> UC7
+@enduml
